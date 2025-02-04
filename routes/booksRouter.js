@@ -2,11 +2,7 @@ const { Router } = require("express");
 const booksRouter = Router();
 const booksController = require("../controllers/booksController");
 const upload = require("../middleware/multerUpload");
-// GET /books
-// GET /books/:ISBN
-// POST /books
-// PUT /books/:ISBN
-// DELETE /books/:ISBN
+
 booksRouter.get("/", booksController.getAllBooks);
 booksRouter.get("/:ISBN", booksController.getBookByISBN);
 

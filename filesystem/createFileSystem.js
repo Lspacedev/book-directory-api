@@ -33,5 +33,5 @@ function createFileSystem() {
     }
   });
 }
-
+createFileSystem();
 module.exports = { createFileSystem };
